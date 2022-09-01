@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+html{
+    font-size: 62.5%; /* its means 1px = 0.1rem or 10px = 1rem */
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --grey:#F2F2F2;
+}
+
+/* body css */
+
+main{
+    margin: 0 auto;
+}
+
+/*header section css started*/
+
+header{
+    background: var(--grey);
+    height: 7.1rem;
+    display: flex;
+    padding: 0 1rem;
+}
+
+header div{
+    display: flex;
+}
+
+header .logo,
+header .icons{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33%;
+}
+
+header .close{
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 35.6%;
+}
+
+header .logo{
+    align-items: flex-end;
+    padding: 0 0 1.2rem 0;
+}
+
+header .close,
+header .icons{
+    align-items: center;
+}
+
+header .icons{
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+}
+
+header .icons a{
+    text-align: center;
+    padding: 0.4rem;
+}
+
+header .icons .res-landscape-mob{
+    padding-left:0.6rem;
+}
+
+header .close{
+    justify-content: flex-end;
+}
+header .close a{
+    display: inline-block;
+    padding: .3rem .2rem;
+    margin:0 0.3rem 1.2rem 0;
+}
+
+
+/* hover effects */
+header .icons a:hover,
+header .close a:hover{
+    background:#e2f0fc;
+}
+
+/* active effects */
+header a.active{
+     background: #c9e4f9;
+}
+
+/*header section css closed */
+
+
+/* main section css started */
+main {
+    max-height:calc(100vh - 7rem);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+/* section 1 css */
+
+
+.sec-1{
+    background:url("./images/1.jpeg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    height: 127.4vh;
+    background-position: 60.2% 50%;
+    display: flex;
+    justify-content:center;
+}
+
+.sec-1 .container{
+    width: 91rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sec-1 .container div{
+    margin-bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.sec-1 h1,
+.sec-1 h5{
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sec-1 h1{
+    font-family:'Ubuntu', sans-serif !important;
+    font-size: 7.2rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.sec-1 h5{
+    font-family:'Roboto', sans-serif !important;
+    font-size: 2.2rem;
+    width: 74.4%;
+    padding: 0!important;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+}
+
+/* sections common */
+.sec-2 .container,
+.sec-3 .container,
+.sec-4 .container,
+.sec-5 .container{
+    max-width: 90%;
+    margin: 0 auto;
+ }   
+
+.sec-4,
+.sec-5,
+.sec-7,
+.sec-8{
+    display: flex;
+    align-items: center;
+}
+
+/* section 2 css */
+.sec-2{
+    background: #f2f2f2;
+    color: #111111 !important;
+    min-height: calc(100vh - 25.6rem);
+    display: flex;
+    padding: 2rem 0;
+}
+
+.sec-2 .container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sec-2 .container .col{
+    flex: 1 1 50%;
+}
+
+.sec-2 .container .col-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 6rem;
+    /*background-clip: content-box;*/
+    /*box-shadow: inset 6rem 0 0 0 lightgreen;*/
+}
+
+
+
+.sec-2 .container .col-1 h2{
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.sec-2 .container .col-1 p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 2.2rem;
+    margin-bottom: 2.8rem;
+}
+
+.sec-2 .container .col-1 a{
+    font-size: 1.4rem;
+    border: .2rem solid #454545;
+    text-transform: uppercase;
+    padding: 1.2rem 3rem;
+    width: fit-content;
+    color: #454545;
+}
+
+.sec-2 .container .col-1 a:hover{
+    color: #ffffff;
+    background: #454545;
+}
+.sec-2 .container .col-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-2 .container .col-2 img{
+    width: 100%;
+    object-fit: cover;
+    background-size:cover;
+}
+
+
+/* section 3 css */
+.sec-3{
+    background: #35506D;
+    min-height: 100vh;
+    display: flex;
+}
+
+.sec-3 .container .content-1 .heading{
+    color: white;
+} 
+
+/* section 6 css */
+.sec-6{
+    background: var(--grey);
+    min-height: 100vh;
+    display: flex;
+}
+
+.sec-6 .container{
+    max-width: 85%;
+    margin: 0 auto;
+ }
+
+.sec-6 .container .content-2{
+    display: flex;
+    gap: 2rem;
+}
+
+.sec-6 .container .content-2 .col{
+    flex: 1 1 50%;
+}
+
+
+.sec-6 .container .content-2 .col-1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}   
+
+.sec-6 .container .content-1 .heading{
+    color: black;
+    font-weight: 400;
+}
+
+.sec-6 .container .content-2 .col-2{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.sec-6 .container .content-2 .col-2 .row{
+    display: flex;
+}
+
+.sec-6 .container .content-2 .col-2 .row span{
+    width: 15%;
+}
+
+.sec-6 .container .content-2 .col-2 .row div{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.sec-6 .container .content-2 .col-2 .row h5{
+    font-size: 2rem;
+    font-weight: 400;
+    color:black;
+}
+
+.sec-6 .container .content-2 .col-2 .row p{
+    font-size: 1.4rem;
+    color:black;
+    line-height: 1.5;
+}
+
+/* section 3 & section 6 common */
+
+.sec-3 .container,
+.sec-6 .container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0;
+    gap: 2rem;
+}
+
+.sec-3 .container .content,
+.sec-6 .container .content{
+    width: 100%;
+}
+
+.sec-3 .container .content-1,
+.sec-6 .container .content-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-3 .container .content-1 .heading,
+.sec-6 .container .content-1 .heading{
+    font-size: 3.6rem;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    width: 40%;
+    height: fit-content;
+}
+
+.sec-3 .container .content-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.sec-3 .container .content-2 .col{
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sec-3 .container .content-2 .col .row{
+    flex: 1 1 33%;
+    display: flex;
+}
+
+.sec-3 .container .content-2 .col .row span{
+    width: 20%;
+}
+
+.sec-3 .container .content-2 .col .row div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sec-3 .container .content-2 .col .row h5{
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.sec-3 .container .content-2 .col .row p{
+    font-size: 1.4rem;
+    color: white;
+    line-height: 1.5;
+}
+
+
+/* section 4 css */
+.sec-4{
+    min-height: 100vh;
+    background: url("./images/4.jpeg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+
+}
+
+/* section 7 css */
+.sec-7{
+    min-height: 100vh;
+    background: url("./images/7.jpeg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+
+.sec-4 .container div,
+.sec-7 .container div{
+    padding:0 0 0 6rem;
+}
+
+/* section 5 css */
+.sec-5{
+    min-height: 100vh;
+    background: url("./images/5.jpeg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+
+/* section 8 css */
+.sec-8{
+    min-height: 100vh;
+    background: url("./images/8.jpeg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+/* common css section 5 and 8 */
+.sec-5 .container div,
+.sec-8 .container div{
+    padding:0 6rem 0 0;
+}
+
+.sec-5 .container,
+.sec-8 .container{
+    justify-content: flex-end;
+}
+/* common css of sec-4 , sec-5 */
+.sec-4 .container,
+.sec-7 .container,
+.sec-5 .container,
+.sec-8 .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sec-4 .container div,
+.sec-7 .container div,
+.sec-5 .container div,
+.sec-8 .container div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.sec-4 .container div h2,
+.sec-7 .container div h2,
+.sec-5 .container div h2,
+.sec-8 .container div h2{
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.sec-4 .container div p,
+.sec-7 .container div p,
+.sec-5 .container div p,
+.sec-8 .container div p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sec-4 .container div a,
+.sec-7 .container div a,
+.sec-5 .container div a,
+.sec-8 .container div a{
+    font-size: 1.4rem;
+    border: .2rem solid white;
+    text-transform: uppercase;
+    padding: 1.2rem 3rem;
+    width: fit-content;
+    color: white;
+}
+
+.sec-4 .container div a:hover,
+.sec-7 .container div a:hover,
+.sec-5 .container div a:hover,
+.sec-8 .container div a:hover{
+    color:black;
+    background:white;
+}
+
+
+
+
+
+/* footer section css */
+
+footer {
+    color: #ffffff;
+    height: 10rem;
+    padding: 1.6rem;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer a,
+footer span{
+    font-size:1.4rem;
+}
+footer a{
+    display: inline-block;
+    color: #f2b0ad;
+    text-decoration: underline;
+}
+
+/* main section css closed */
+
+
+/* media queries */
+
+@media(max-width: 1024px){
+    header .close{
+        flex-basis: 37%;
+    }
+}
+
+@media(max-width: 768px){
+    .res-desktop,
+    .res-laptop{
+        display: none;
+    }
+    
+    header .close{
+        flex-basis: 38%;
+    }
+    .sec-2 .container .col{
+        flex: 1 1 100%;
+    }
+    .sec-3 .container .content-2 .col{
+        flex-basis: 50%;
+        margin-top: 2rem;
+    }
+    .sec-3 .container .content-2 .col-3 .row span{
+        width: 10%;
+    }
+    .sec-3 .container .content-2 .col-3 .row div{
+        width: 90%;
+    }
+    .sec-4 .container div,
+    .sec-5 .container div,
+    .sec-7 .container div,
+    .sec-8 .container div{
+        min-width: 70%;
+    }
+
+}
+
+@media(max-width :425px){
+    html{
+        font-size: 55%;
+    }
+    header .icons{
+        display: none;
+    }
+    header .logo,
+    header .close{
+        flex: 1 1 50%;
+    }
+    
+    .sec-3 .container .content-2 .col{
+        flex-basis:100%;
+        margin-bottom: 3rem;
+        gap: 0;
+    }
+    .sec-4 .container div,
+    .sec-5 .container div,
+    .sec-7 .container div,
+    .sec-8 .container div{
+        min-width: 100%;
+    }
+    .sec-4 .container div,
+    .sec-7 .container div,
+    .sec-5 .container div,
+    .sec-8 .container div{
+        padding: 0 2rem;
+    }
+    
+    .sec-6 .container .content-2{
+    flex-wrap: wrap;
+}

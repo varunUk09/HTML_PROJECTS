@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+:root {
+    --green: #0d9979;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    padding: 5rem 0;
+    color: #555;
+}
+.heading i{
+    font-size: 2rem;
+    color: var(--green);
+    margin:0 1.1rem;
+}
+
+.btn{
+    font-size: 2rem;
+    border: 0.2rem solid var(--green);
+    padding: 0.5rem 3rem;
+    color: var(--green);
+    background: none;
+}
+
+.btn:hover{
+    background: var(--green);
+    color: white;
+}
+
+.logo{
+    color: var(--green);
+    font-size: 3rem;
+}
+/*header css*/
+
+header{
+    width: 100%;
+    box-shadow: 0 0.1rem 0.3rem rgb(0 0 0 / 30%);
+    background: #fff;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 1rem;
+}
+
+header nav ul li a{
+    color: #666;
+    font-size: 2rem;
+}
+
+header nav ul li a:hover{
+    color: var(--green);
+}
+
+header .fa-bars{
+    display: none;
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+}
+
+
+
+/*header css closed*/
+
+/* home section css */
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .container{
+    width: 70rem;
+    text-align: center;
+    padding:1rem;
+}
+
+.home .container h1,.home .container p{
+    text-align: center;
+}
+.home .container h1{
+    font-size: 6.5rem;
+    color: var(--green);
+    padding: 0;
+}
+
+.home .container p{
+    padding:1rem;
+    font-size: 1.9rem;
+    color: #333;
+}
+
+.home .container .btn{
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+/* home section css closed*/
+
+
+/* about section css */
+.about{
+    background: #ffe;
+}
+
+.about .blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.about .blog .img,
+.about .blog .content {
+    flex-grow: 1;
+    flex-basis: 40%;
+    padding: 2rem;
+}
+
+.about .blog .img{
+    object-fit: cover;
+}
+
+.about .blog .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .blog .content h2{
+    font-size: 3rem;
+    color: var(--green);
+
+}
+
+.about .blog .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #333;
+
+}
+
+.about .blog .content a{
+    font-size: 2rem;
+    border: 0.2rem solid var(--green);
+    padding: 0.5rem 3rem;
+    margin: 1rem 0;
+    color: var(--green);
+    width: fit-content;
+}
+
+.about .blog .content a:hover{
+    background: var(--green);
+    color: white;
+}
+
+.acheivements{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.acheivements div{
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: center;
+    border: 0.2rem solid var(--green);
+    padding: 2rem 1rem;
+    margin: 2rem;
+}
+
+.acheivements div i{
+    font-size: 4rem;
+    color: var(--green);
+}
+
+.acheivements div h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+
+}
+
+.acheivements div p{
+    font-size: 1.5rem;
+
+}
+
+/* about section css closed*/
+
+
+/* services section css */
+
+.services{
+    background: #f0f0f0;
+}
+
+.services .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 87%;
+    margin: 0 auto;
+    padding: 1.2rem;
+}
+
+.services .heading{
+    padding-bottom:4rem;
+}
+
+.services .container .content{
+    text-align: center;
+    flex-grow: 1;
+    flex-basis:30.3%;
+    border: 0.2rem solid var(--green);
+    padding: 2rem 1rem;
+    margin: 1.5rem;
+    cursor: pointer;
+    background: #fff;
+}
+
+.services .container .content:hover{
+    box-shadow: 0 0.3rem 0.5rem rgb(0  0  0 / 30%);
+}
+
+.services .container .content i{
+    color: var(--green);
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+.services .container .content h3{
+    color:#333;
+    font-size: 2rem;
+}
+
+.services .container .content p{
+    color:#666;
+    font-size:1.5rem;
+    padding: 1rem 0;
+}
+
+.services .container .content a{
+    color:#333;
+    background: var(--green);
+    font-size:1.7rem;
+    padding:0.5rem 1rem;
+}
+
+/* services section css closed*/
+
+/* our projects section css*/
+
+
+.our-projects{
+    background: rgb(237, 250, 239);
+    min-height: 100vh;
+}
+
+.our-projects .container{
+    width: 91%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
+}
+
+.our-projects .container .content{
+    flex-grow: 1;
+    flex-basis: 33rem;
+    box-shadow: 0 0.3rem 0.5rem #000;
+    line-height: 0rem;
+}
+
+.our-projects .container .content img{
+    height: 32rem;
+    object-fit: cover;
+}
+
+/* our projects section css closed*/
+
+/* donate us section css */
+.donate-us{
+    background: rgb(225, 249, 242);
+    padding-bottom: 2.8rem;
+}
+
+
+.donate-us form{
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 0.3rem 0.5rem #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2.9rem 2rem;
+}
+
+.donate-us form .input-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.donate-us form input[type="text"],
+.donate-us form input[type="email"],
+.donate-us form select
+{
+    border:none;
+    outline:none;
+    width:48%;
+    padding:1rem;
+    font-size: 1.7rem;
+}
+
+.donate-us form textarea{
+    border: none;
+    outline:none;
+    width:100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    resize: none;
+    height: 20rem;
+}
+
+/* footer css */
+
+.footer{
+    background: white;
+}
+
+.footer .f-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .f-container div,
+.footer .f-container form{
+    flex: 1 1 25rem;
+    margin: 2rem;
+}
+
+
+.footer .f-container .logo{
+    font-size: 3rem;
+    color: var(--green);
+    text-align: center;
+    display: block;
+}
+
+.footer .f-container p{
+    font-size: 1.7rem;
+    color: #555;
+    padding: 1rem 0;
+}
+
+.footer .f-container .share h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #000;
+}
+
+.footer .f-container .share a{
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #222;
+    padding: 0.5rem 0;
+}
+
+
+.footer .f-container .f-form{
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.footer .f-container .f-form input[type="email"]{
+    border: 0.2rem solid var(--green);
+    font-size: 1.7rem;
+    color: #222;
+    outline: none;
+    padding: 0.6rem 1rem;
+    flex: 5;
+}
+
+.footer .f-container .f-form button {
+    border: none;
+    outline: none;
+    background: var(--green);
+    color: #fff;
+    font-size: 1.9rem;
+    padding: 0.6rem 2.2rem;
+    flex: 1;
+}
+
+.footer .credit{
+    text-align: center;
+    color: #222;
+    font-size: 2rem;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-top: 0.1rem solid #ccc;
+}
+
+.footer .credit a{
+    color: var(--green);
+}
+
+.footer .credit a i{
+    color: red;
+}
+
+
+/* footer css closed */
+
+/*media query for navbar*/
+@media(max-width: 800px){
+    html{
+        font-size: 52%;   
+    }
+    header .navbar{
+        position: fixed;
+        top: -100rem;
+        width: 100%;
+        left: 0;
+        background: white;
+    }
+    header nav ul{
+        flex-direction: column;
+        padding: 2rem 0;
+        align-items: center;
+    }
+    header nav ul li{
+        margin: 1rem 0;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .fa-times{
+        transform: rotate(180deg);
+
+    }
+    header .nav-toggle{
+        top: 5rem;
+    }
+    
+
+}
+
+@media(max-width: 665px){
+    .about .blog{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    .about .blog{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media(max-width: 432px){
+    .home .container h1{
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 400px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
