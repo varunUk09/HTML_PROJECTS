@@ -76,7 +76,7 @@ h1,h2{
 	position: absolute;
 	top:88%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,-54%);
 }
 
 .sec-1 .row-1::before{
@@ -84,8 +84,8 @@ h1,h2{
 	background:url("./images/png/hero_center.png");
 	background-repeat: no-repeat;
 	background-size:100%;
-	width:68rem;
-	height:36.4rem;
+	width:67rem;
+	height:36rem;
 	opacity: 0.1;
 }
 
@@ -99,13 +99,13 @@ h1,h2{
 
 .sec-1 .row-1 .centre-content h2{
 	font-family: 'PT Sans', sans-serif;
-	font-size: 3.3rem;
+	font-size: 3.6rem;
 	font-weight: 400;}
 .sec-1 .row-1 .centre-content h1{
 	font-family: 'Lato', sans-serif;
-	font-size: 12rem;
+	font-size: 13rem;
 	line-height: 1;
-	margin:1.3rem 0 0 0;
+	margin:0.5rem 0 0 0;
 	text-align: center;
 
 }
@@ -127,9 +127,9 @@ h1,h2{
 }
 
 .sec-1 .row-2 .wrapper .row2-1 .container{
-	margin-top: -5rem;
-	width:98rem;
-	min-height: 24rem;
+	margin-top: -4rem;
+	width:98.67rem;
+	min-height: 24.2rem;
 	background-color: var(--blue);
 	display: flex;
 
@@ -142,20 +142,21 @@ h1,h2{
 	justify-content: center;
 	align-items: center;
 	color:var(--white);
+	gap:2rem;
 }
 
 .sec-1 .row-2 .wrapper .row2-1 .container div h1{
 	font-size: 7rem;
-	margin:1rem 0;
 }
 
 .sec-1 .row-2 .wrapper .row2-1 .container div h3{
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 	font-weight: 400;
 }
 
 .sec-1 .row-2 .wrapper .row2-2{
 	display: flex;
+	gap:2rem;
 }
 
 .sec-1 .row-2 .wrapper .row2-2 div {
@@ -163,28 +164,28 @@ h1,h2{
 }
 
 .sec-1 .row-2 .wrapper .row2-2 .col-1{
-	padding: 2rem;
+	padding-left: 2.8rem;
+	padding-right: 5.5rem;
+	padding-top: 3.5rem;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
+	flex-direction: column;}
 
 .sec-1 .row-2 .wrapper .row2-2 .col-1 h3{
 	font-size: 2.2rem;
 	font-weight: 400;
-	margin-bottom: 2rem;
+	margin-bottom: 2.2rem;
 }
 
 .sec-1 .row-2 .wrapper .row2-2 .col-1 h1{
-	font-size: 4.6rem;
+	font-size: 4.8rem;
 	font-weight: 700;
 	line-height: 1.1;
-	margin-bottom: 1.8rem;
+	margin-bottom: 1.9rem;
 }
 
 .sec-1 .row-2 .wrapper .row2-2 .col-1 p{
 	color:var(--black);
-	margin-bottom: 2.2rem;
+	margin-bottom: 4.2rem;
 }
 
 
@@ -205,25 +206,25 @@ h1,h2{
 }
 
 .sec-2 .wrapper{
-	min-height: 30rem;
+	min-height: 27rem;
 	display: flex;
 	margin:7rem auto;
 }
 
 .sec-2 .wrapper div{
 	flex-basis: 33.3333%;
-	margin:0 1rem;
+	margin:0 3rem;
 }
 
 .sec-2 .wrapper div img{
 	width: 7rem;
-	margin:2rem 0;
+	margin:1.4rem 0 1.4rem 0;
 }
 
 .sec-2 .wrapper div h2{
 	font-size: 2.4rem;
 	font-weight: 400;
-	margin:2.3rem 0;
+	margin-bottom: 2rem;
 }
 
 /* section 3 */
@@ -269,14 +270,14 @@ h1,h2{
 
 /* section 5 */
 
-.sec-5{
+.sec-4{
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./images/sec-5.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-.sec-5 .wrapper{
+.sec-4 .wrapper{
 	min-height: 53rem;
 	padding:2.5rem 3rem;
 	display: flex;
@@ -286,48 +287,48 @@ h1,h2{
 	gap:7rem;
 }
 
-.sec-5 .wrapper > div{
+.sec-4 .wrapper > div{
 	flex:1;
 	min-width: 31.7rem;
 }
 
 
-.sec-5 .wrapper .address{
+.sec-4 .wrapper .address{
 	display: flex;
 	flex-direction: column;
 	padding-top:6%;
 }
 
-.sec-5 .wrapper .address h2{
+.sec-4 .wrapper .address h2{
 	font-size: 4.8rem;
 	padding-right: 3rem;
 	line-height: 1.1;
 }
 
-.sec-5 .wrapper .address h3{
+.sec-4 .wrapper .address h3{
 	font-size: 2.24rem;
 	font-weight: 400;
 	margin:2rem 0 2.8rem 0;
 }
 
-.sec-5 .wrapper .address h4{
+.sec-4 .wrapper .address h4{
 	font-size: 1.4rem;
 	font-weight: 400;
 	margin-bottom: 0.3rem;
 }
 
-.sec-5 .wrapper .address .social_icons{
+.sec-4 .wrapper .address .social_icons{
 	margin-top:2rem;
 }
 
-.sec-5 .wrapper .address .social_icons a{
+.sec-4 .wrapper .address .social_icons a{
 	display: inline-block;
 	font-size: 2.1rem;
 	color:white;
 	margin-right: 1.2rem;
 }
 
-.sec-5 .wrapper .contact-us form{
+.sec-4 .wrapper .contact-us form{
 	width:100%;
 	height: 100%;
 	display: flex;
@@ -337,7 +338,7 @@ h1,h2{
 	padding: 1rem 0.5rem 0 0.5rem;
 }
 
-.sec-5 .wrapper .contact-us form .fields{
+.sec-4 .wrapper .contact-us form .fields{
 	font-size: 1.6rem;
 	color:var(--contact-us-field-brdr);
 	padding: 1.2rem;
@@ -347,38 +348,38 @@ h1,h2{
 	border:.1rem solid var(--contact-us-field-brdr);
 }
 
-.sec-5 .wrapper .contact-us form .fields:focus{
+.sec-4 .wrapper .contact-us form .fields:focus{
 		border-radius: .5rem;
 }
 
-.sec-5 .wrapper .contact-us form textarea{
+.sec-4 .wrapper .contact-us form textarea{
 	resize: none;
 }
 
 /* section 6 */
-.sec-6{
+.sec-5{
 	background-color: var(--blue);
 }
 
-.sec-6 .wrapper{
+.sec-5 .wrapper{
 	min-height: 20rem;
 	display: flex;
 }
 
-.sec-6 .wrapper div{
+.sec-5 .wrapper div{
 	flex:1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.sec-6 .wrapper div h1{
+.sec-5 .wrapper div h1{
 	font-size: 5rem;
 	font-weight: 400;
 	color:white;
 }
 
-.sec-6 .wrapper div a{
+.sec-5 .wrapper div a{
 	background-color: var(--white);
 	color: var(--black);
 	font-weight: 700;
@@ -460,7 +461,7 @@ h1,h2{
 		flex-basis:100%;
 		height: 30rem;
 	}
-	.sec-6 .wrapper {
+	.sec-5 .wrapper {
     	flex-direction: column;
 	}
 }
