@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@400;700&display=swap');
-/*font-family: 'Lato', sans-serif;
-font-family: 'PT Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 /* universal css */
 
@@ -29,6 +29,7 @@ a{
 	--black:black;
 	--para-black:#999999;
 	--bg-color:#f2f2f2;
+	--contact-us-field-brdr:white;
 }
 
 .wrapper{
@@ -37,7 +38,9 @@ a{
 }
 
 .btn{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: .2rem;
 	font-family: 'Lato', sans-serif;
 	padding:1.3rem 3rem;
 	display: inline-block;
@@ -46,10 +49,18 @@ a{
 	width: max-content;
 }
 
+.btn:hover{
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1))
+}
+
 .p-font{
 	font-size: 1.5rem;
 	font-weight: 300;
 	line-height: 1.5;
+}
+
+h1,h2{
+	font-family:'Lato',sans-serif;
 }
 
 /* section 1 row 1 */
@@ -255,30 +266,119 @@ a{
 	color:var(--black);
 }
 
+
+/* section 5 */
+
+.sec-5{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./images/sec-5.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.sec-5 .wrapper{
+	min-height: 53rem;
+	padding:2.5rem 3rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color:white;
+	gap:7rem;
+}
+
+.sec-5 .wrapper > div{
+	flex:1;
+	min-width: 31.7rem;
+}
+
+
+.sec-5 .wrapper .address{
+	display: flex;
+	flex-direction: column;
+	padding-top:6%;
+}
+
+.sec-5 .wrapper .address h2{
+	font-size: 4.8rem;
+	padding-right: 3rem;
+	line-height: 1.1;
+}
+
+.sec-5 .wrapper .address h3{
+	font-size: 2.24rem;
+	font-weight: 400;
+	margin:2rem 0 2.8rem 0;
+}
+
+.sec-5 .wrapper .address h4{
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin-bottom: 0.3rem;
+}
+
+.sec-5 .wrapper .address .social_icons{
+	margin-top:2rem;
+}
+
+.sec-5 .wrapper .address .social_icons a{
+	display: inline-block;
+	font-size: 2.1rem;
+	color:white;
+	margin-right: 1.2rem;
+}
+
+.sec-5 .wrapper .contact-us form{
+	width:100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap:1.6rem;
+	justify-content: center;
+	padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.sec-5 .wrapper .contact-us form .fields{
+	font-size: 1.6rem;
+	color:var(--contact-us-field-brdr);
+	padding: 1.2rem;
+	background: transparent;
+	outline: none;
+	border: none;
+	border:.1rem solid var(--contact-us-field-brdr);
+}
+
+.sec-5 .wrapper .contact-us form .fields:focus{
+		border-radius: .5rem;
+}
+
+.sec-5 .wrapper .contact-us form textarea{
+	resize: none;
+}
+
 /* section 6 */
-.sec-4{
+.sec-6{
 	background-color: var(--blue);
 }
 
-.sec-4 .wrapper{
+.sec-6 .wrapper{
 	min-height: 20rem;
 	display: flex;
 }
 
-.sec-4 .wrapper div{
+.sec-6 .wrapper div{
 	flex:1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.sec-4 .wrapper div h1{
+.sec-6 .wrapper div h1{
 	font-size: 5rem;
 	font-weight: 400;
 	color:white;
 }
 
-.sec-4 .wrapper div a{
+.sec-6 .wrapper div a{
 	background-color: var(--white);
 	color: var(--black);
 	font-weight: 700;
@@ -351,11 +451,16 @@ a{
 		flex-direction: column;
 		gap:2rem;
 	}
+
+	.sec-3 .content{
+		padding:3.6rem 7rem;		
+	}
+
 	.sec-3 div{
 		flex-basis:100%;
 		height: 30rem;
 	}
-	.sec-4 .wrapper {
+	.sec-6 .wrapper {
     	flex-direction: column;
 	}
 }
