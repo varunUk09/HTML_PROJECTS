@@ -230,18 +230,32 @@ h1,h2{
 /* section 3 */
 .sec-3{
 	display: flex;
-	min-height: 35rem;
+	min-height: 35.7rem;
 }
 
 .sec-3 div{
 	flex-basis: 33.3333%;
 }
 
-.sec-3 .img{
+.sec-3 .img-1{
 	background:url("./images/speakers/1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+.sec-3 .img-2{
+	background:url("./images/speakers/2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:50% 46%;
+}
+
+.sec-3 .img-3{
+	background:url("./images/speakers/3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:50% 48%;
 }
 
 .sec-3 .content {
@@ -249,17 +263,23 @@ h1,h2{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding:1.6rem;
-	color:var(--white);
-}
+	color:var(--white);}
+
+.sec-3 .content h2,p,.btn{
+	margin-left: 2rem;
+}	
 
 .sec-3 .content h2{
 	font-size: 2.5rem;
 	font-weight: 400;
+	margin-bottom: 2rem;
 }
 
 .sec-3 .content p{
-	margin:2rem 0;
+	margin-bottom: 3.8rem;
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding-right: 2rem;
 }
 
 .sec-3 .content .btn{
@@ -369,22 +389,25 @@ h1,h2{
 .sec-5 .wrapper div{
 	flex:1;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 
 .sec-5 .wrapper div h1{
 	font-size: 5rem;
 	font-weight: 400;
 	color:white;
+	align-self: flex-end;
+	margin-right: 3.7rem;
 }
 
 .sec-5 .wrapper div a{
 	background-color: var(--white);
 	color: var(--black);
-	font-weight: 700;
-	font-size: 1.4rem;
-	letter-spacing: 0.3rem;
+	font-weight:bolder;
+	font-size: 1.7rem;
+	letter-spacing: 0.2rem;
+	margin-left: 17.7rem;
 }
 
 /* media quaries */
@@ -426,7 +449,9 @@ h1,h2{
 		flex-basis:50%;
 		height: 30rem;
 	}
-}
+	.sec-3 .img-3 {
+    	background-position: top;
+	}
 
 @media(max-width: 767px){
 	.wrapper{
@@ -464,7 +489,15 @@ h1,h2{
 	.sec-5 .wrapper {
     	flex-direction: column;
 	}
-}
+	.sec-5 .wrapper div > h1{
+    	margin-right: 0;
+    	align-self: center;
+	}
+
+	.sec-5 .wrapper div > a{
+    	margin-left: 0;
+    	align-self: center;
+	}
 
 @media(max-width: 575px){
 	.wrapper{
