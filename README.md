@@ -64,7 +64,7 @@ My_Design [Link](https://varunuk09.github.io/HTML_PROJECTS/nice_page_6/)
 ====================================
 
 #### nice_page_7
-Original Design [Link](https://nicepage.com/website-templates/preview/business-bridge-20115?device=desktop)
+Original Design [Link](https://nicepage.com/website-builder-software/preview/ecology-habits-67560?device=desktop)
 
 My_Design [Link](https://varunuk09.github.io/HTML_PROJECTS/nice_page_7/)
 
