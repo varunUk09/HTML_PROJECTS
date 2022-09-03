@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/app.css" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Clean Cars - Keep Your Clean Cars Always</title>
-</head>
-<body style="display: flex;flex-direction: column;">
-   
-   <!-- Nav  bar -->
-      <header>
-         <div class="logo"><img src="images/logo/logo.png"></div>
-         <nav>
-            <ul id="navigation">
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">SERVICES</a></li>
-               <li><a href="#">QUALITY</a></li>
-               <li><a href="#">CHOOSE</a></li>
-               <li><a href="#">TESTIMONIAL</a></li>
-               <li><a href="#">CONTACT US</a></li>
-               <li><img src="images/search_icon/search-icon.png"></li>
-            </ul>
-         </nav>
-         <div class="search">
-            <img src="images/search_icon/search-icon.png">
-            <button id="menu_btn">
-               <img src="images/menu_icon/bars.png">
-            </button>
-         </div>
-      </header>
-   <!-- Nav bar end -->   
-   <!--main view -->
+<!--main view -->
    
    <section class="main-view">
       
@@ -89,7 +56,7 @@
 
     <!--Quality-->
    <section class="view-3">
-      <div class="view-title">
+   	<div class="view-title">
          <h1>
             We’re Providing Best <a href="">Quality Service</a>
          </h1>
@@ -137,12 +104,12 @@
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The</p>
          </div>
       </div>
-      
+   	
    </section>
 
    <!--Testimonial-->
    <section class="view-5">
-      <div class="view-title">
+   	<div class="view-title">
          <h1>
             Testimonial
          </h1>
@@ -261,7 +228,3 @@
       </section>
 
       <section class="f-copyright">Copyright 2020 All Rights Reserved. Free html Templates</section>
-   </footer>
-   <script type="text/javascript" src="script.js"></script>
-</body>
-</html>																																																																													
