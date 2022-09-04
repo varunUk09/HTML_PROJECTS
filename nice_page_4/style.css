@@ -298,7 +298,7 @@ header .wrapper .container-2 i:hover{
 }
 
 .sec-4 .wrapper{
-	min-height: 118vh;
+	min-height: 110vh;
 	display: flex;
 	justify-content: space-between;
 }
@@ -308,17 +308,23 @@ header .wrapper .container-2 i:hover{
 	width: 50%;
 }
 
+.sec-4 .wrapper .col-1 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
 .sec-4 .wrapper .col-1 img{
-	width: 100%;
+	width:90%;
 	object-fit: cover;
-	height:auto;
+	height: 90%;
 }
 
-.sec-4 .wrapper .col-2{
-	padding-left: 3.4rem;
-	padding-right: 4.3rem;
-	padding-top: 16rem;
+
+.sec-4 .wrapper .col-2 {
+	padding:16rem 0 3rem 0;
 }
+
+
 
 .sec-4 .wrapper .col-2 h2{
 	font-size: 7.2rem;
