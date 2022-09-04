@@ -47,6 +47,9 @@ a{
 	color: white
 }
 
+.btn:hover{
+	color:black;
+}
 
 /* section 1 css*/
 .sec-1{
@@ -257,6 +260,7 @@ a{
 
 .sec-4 .wrapper div p{
 	margin: 2rem 0;
+	font-style: italic;
 }
 
 .sec-4 .wrapper div h1{
@@ -267,6 +271,7 @@ a{
 	font-size: 1.7rem;
 	color:black;
 	font-weight: lighter;
+	font-style: italic;
 }
 
 /* section 5 */
@@ -296,6 +301,7 @@ a{
 .sec-5 .container p{
 	color:white;
 	margin:2rem;
+	font-style: italic;
 }
 
 
@@ -317,6 +323,7 @@ a{
 .sec-6 .container p{
 	width:56rem;
 	margin-bottom: 3rem;
+	font-style: italic;
 }
 
 .sec-6 .wrapper{
@@ -354,6 +361,10 @@ a{
 .sec-6 .wrapper .col h2,
 .sec-6 .wrapper .col p{
 	margin:2rem 0 0 2rem;
+}
+
+.sec-6 .wrapper .col p{
+	font-style:italic;
 }
 
 
@@ -428,6 +439,10 @@ a{
 
 .sec-9 .wrapper .col-2{
 	padding:0 10rem;
+}
+
+.sec-9 .wrapper .col-2 p{
+	font-style: italic;
 }
 
 
