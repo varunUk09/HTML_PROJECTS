@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 /*font-family: 'Poppins', sans-serif;*/
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+/*font-family: 'Orbitron', sans-serif;*/
+
 
 *{
 	margin: 0;
@@ -8,8 +11,11 @@
 	box-sizing: border-box;
 	list-style:none;
 	text-decoration:none;
-	font-family: 'Poppins', sans-serif !important;
-	/*overflow-x: hidden;*/
+	transition: all 0.2s
+}
+
+body{
+	font-family: 'Poppins', sans-serif !important;	
 }
 
 html{
@@ -25,6 +31,7 @@ html{
 	--header-height:6.9rem;
 	--menu-btn-color:white;
 	--support-color:#fafafa;
+	--footer-color:#252525;
 }
 
 .wrapper{
@@ -65,6 +72,29 @@ html{
 	font-size:var(--font-size);
 
 	color:var(--clr);
+}
+
+
+/* service title */
+.title{
+	font-size: 4rem;
+	position: relative;
+	padding-bottom: 1.2rem;
+}
+
+.title::after{
+	content:"";
+	width:6.8rem;
+	border:0.5rem solid black;
+	border-radius: 1rem;
+	position: absolute;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.title span{
+	color:#0c426e;
 }
 
 
@@ -154,7 +184,8 @@ header .search button img{
 
 .home .wrapper {
 	height:auto;
-	margin:8.8rem auto;
+	margin:0 auto;
+	padding:8rem 0;
 	display: flex;
 	gap:1rem;
 }
@@ -198,6 +229,332 @@ header .search button img{
 
 /* home section css end */
 
+
+
+/* our services section css */
+
+.our-services .wrapper{
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom:9rem;
+}
+
+.our-services .wrapper > p{
+	margin-top:3rem;
+}
+
+.our-services .wrapper > .services{
+	margin-top:9rem;
+	display:flex;
+	justify-content: center;
+	gap:2.2rem;
+}
+
+.our-services .wrapper .services .col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.our-services .wrapper .services .col img{
+	height: 35rem;
+	width:100%;
+}
+
+.our-services .wrapper .services .col h4{
+	font-size: 2.6rem;
+	font-weight:lighter;
+	padding:2rem 0 1rem 0;
+}
+
+.our-services .wrapper .services .col .p-font-sm{
+	padding:0 1rem 3rem 1rem;
+}
+
+.our-services .wrapper .services .col .btn{
+	--left:3rem;
+	--rght:3rem;
+	background-color:#252525;
+}
+
+.our-services .wrapper .services .col .btn:hover{
+	background-color: var(--nav-bar-color);
+}
+
+/* our services section css end */
+
+/* Quality service section css */
+.quality-service > .wrapper:first-child{
+	margin:0 auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding:0 1rem 8rem 1rem;
+}
+
+.quality-service > .container{
+	background-image: url("../images/quality_section/img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding:8rem 0;
+}
+
+.quality-service > .container > .wrapper{
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	gap:3rem;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+	text-align: center;
+}
+
+.quality-service > .container > .wrapper .btn{
+	background-color: white;
+	--left:3rem;
+	--rght:3rem;
+	color:black;
+}
+
+.quality-service > .container > .wrapper h2{
+	font-size: 3rem;
+}
+
+.quality-service > .container > .wrapper .btn:hover{
+	background-color:#252525;
+	color: white;
+}
+
+/* Quality service section css end */
+
+/* why choose us section css */
+
+.why-choose-us .wrapper {
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 8rem;
+	/*text-align: center;*/
+}
+
+.why-choose-us .wrapper .cards{
+	display: flex;
+	gap:1.2rem;
+	margin:8rem 0 0 0;
+}
+
+.why-choose-us .wrapper .cards .col{
+	padding:3rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap:1rem;
+}
+
+.why-choose-us .wrapper .cards .col > div{
+	display: flex;
+	gap:1rem;
+	align-items: center;
+}
+
+.why-choose-us .wrapper .cards .col > div > h4{
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.why-choose-us .wrapper .cards .col > div h4:first-child{
+	border:.1rem solid var(--nav-bar-color);
+	padding:1rem 1.4rem;
+	border-radius: 50%;
+}
+
+.why-choose-us .wrapper .cards .col:hover{
+	background-color: var(--nav-bar-color);
+	color:white;
+}
+
+
+
+/* why choose us section css end */
+
+
+/* testimonial section css */
+
+.testimonial .wrapper{
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding:8rem 1rem;
+}
+
+.testimonial .wrapper .testimonial_box{
+	box-shadow: 0rem 0rem 1rem .5rem #f1f1f1;
+	width:80%;
+	padding:6rem 12rem;
+	display: flex;
+	margin:8rem 0 0 0;
+	align-items: center;
+	gap:1.6rem;
+}
+
+.testimonial .wrapper .testimonial_box .client_img img{
+	width:9.4rem;
+	height:14rem;
+}
+
+.testimonial .wrapper .testimonial_box .client_about{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.testimonial .wrapper .testimonial_box .client_about > p:first-child{
+	margin-bottom: 1.6rem;
+	color:#0C0C0c;
+}
+
+.testimonial .wrapper .testimonial_box .client_about .client_name{
+	font-size: 2rem;
+	font-weight: 400;
+	color:#0c0c0c;
+}
+
+.testimonial .wrapper .testimonial_box .client_about > p:nth-child(3){
+	color:#0c426e;
+}
+
+/* testimonial section css end */
+
+
+
+/* footer section css */
+
+.footer{
+	background-color: var(--footer-color);
+}
+
+.footer .wrapper{
+	min-height: 30rem;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	padding:9rem 1rem 0 1rem;
+}
+
+/* footer row 1 */
+.footer .wrapper .row-1{
+	display: flex;
+	gap:2rem;
+}
+
+.footer .wrapper .row-1 .col {
+	flex-basis: 50%;
+}
+
+
+.footer .wrapper .row-1 .col > h3{
+	font-size: 2.4rem;
+	font-weight:500;
+	color:white;
+	margin-bottom: 2.8rem;
+}
+
+.footer .wrapper .row-1 .col li{
+	margin-bottom: 1rem;
+}
+
+.footer .wrapper .row-1 .col li,li a{
+	color:#b1b6c2;
+	font-size: 1.6rem;
+}
+
+.footer .wrapper .row-1 .col li a:hover{
+	color:white;
+}
+
+
+.footer .wrapper .row-1 .col-4 input[type="email"]{
+	padding:1.3rem 1rem;
+	font-size: 1.8rem;
+	margin-bottom: 1.8rem;
+	width:100%;
+	outline: none;
+	border:none;
+}
+
+.footer .wrapper .row-1 .col-4 input[type="email"]::placeholder,
+.footer .wrapper .row-1 .col-4 input[type="email"]{
+   text-align: center; 
+}
+
+
+.footer .wrapper .row-1 .col-4 .btn{
+	--left:3rem;
+	--rght:3rem;
+}
+
+.footer .wrapper .row-1 .col-4 .btn:hover{
+	background-color: white;
+	color:#b1b6c2;
+}
+
+
+/* footer social icons section */
+.footer .wrapper .row-2{
+	display: flex;
+	justify-content: center;
+	gap:1.2rem;
+	margin-top: 3rem;
+}
+
+.footer .wrapper .row-2 > div{
+	width:6rem;
+	height: 6rem;
+	border-radius: 50%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.3rem;
+}
+
+.footer .wrapper .row-2 > div:hover{
+	background-color: #007bff;
+	color:white;
+}
+/* footer copyright part */
+.footer .wrapper .row-3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 8rem;
+	margin-bottom: 1.5rem;
+	color:white;
+	text-align: center;
+}
+
+.footer .wrapper .row-3 > p a{
+	color:white;
+}
+
+.footer .wrapper .row-3 > p a:hover{
+	color:#b1b6c2;
+}
+
+
 /* ==================== */
 
 /*     media queries    */
@@ -207,6 +564,15 @@ header .search button img{
 @media(max-width: 1199px){
 	.wrapper{
 		width: 96rem;
+	}
+	/* our services section media query */
+	.our-services .wrapper .services .col img{
+		height: 28.9rem;
+	}
+
+	/* testimonial section media query */
+	.testimonial .wrapper .testimonial_box{
+		padding:6rem 3.6rem;
 	}
 }
 
@@ -258,12 +624,49 @@ header .search button img{
 		--left:2.7rem !important;
 		--rght: 2.7rem !important;
 	}
+
+	/* our services section media query */
+	.our-services .wrapper .services .col img{
+		height: 19.7rem;
+	}
+
+	.our-services .wrapper .services .col h4 {
+    	font-size: 2rem;
+	}
+
+	.our-services .wrapper .services .col .p-font-sm {
+		font-size: 1.2rem;
+	}
+
+	/* media query for why choose us section */
+	.why-choose-us .wrapper .cards .col > div > h4 {
+    	font-size: 1.4rem;
+	}
+
+
+	/* media Query for footer */
+	.footer .wrapper .row-1{
+		flex-wrap: wrap;
+	 }
+
+	.footer .wrapper .row-1 .col {
+		flex-basis: 48%;
+	}
+
+	/* testimonial section media query */
+	.testimonial .wrapper .testimonial_box{
+		width: 100%;
+	}
 }
 
 
 @media(max-width: 767px){
 	.wrapper{
 		width: 54rem;
+	}
+
+	.title{
+		font-size: 2.7rem;
 	}
 
 	/* media query for home section */
@@ -277,11 +680,47 @@ header .search button img{
 		height:auto;
 		width: 100%;
 	}
+
+	/* media query for our services section */
+	.our-services .wrapper {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.our-services .wrapper > .services{
+		flex-direction: column;
+	}
+
+	.our-services .wrapper .services .col img {
+    	height:100%;
+	}
+
+	/* media query for why choose us section */
+	.why-choose-us .wrapper .cards{
+		flex-direction: column;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 @media(max-width: 576px){
 	.wrapper{
 		width: 100%;
+	}
+
+	/* media query for footer */
+	.footer .wrapper .row-1{
+		flex-direction: column;
+	 }
+
+	 /* testimonial section media query */
+
+	 .testimonial .wrapper{
+		padding:8rem 1.4rem;
+	}
+	.testimonial .wrapper .testimonial_box{
+		flex-direction: column;
+		align-items: flex-start;
 	}
 }
 
