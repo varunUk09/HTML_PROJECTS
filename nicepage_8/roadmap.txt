@@ -1,0 +1,19 @@
+1)Inserted basic html structure
+
+2)linked required css,js files to the html file
+
+3)in css add universal codes,reusable codes and all nessecary codes added
+
+4)required images download(some icons are not same because they were undownloadabled from the original website)
+
+
+5)predefined classes
+		text-colors
+		font-families
+		font-sizes
+		font-weight
+		flex
+		dead centre using flex
+		flex-direction
+		common buttons
+		common box shadow
