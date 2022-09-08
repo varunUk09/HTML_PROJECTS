@@ -599,7 +599,8 @@ header nav ul .links a:hover{
 /* section 4 */
 .sec-4{
     --img-w:86.3rem;
-    height: 103.9rem;
+    --img-h:62.2rem;
+    height: 104.9rem;
 }
 
 .sec-4 .support-box{
@@ -624,7 +625,7 @@ header nav ul .links a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 62.2rem;
+    height:var(--img-h);
     width:var(--img-w);
 }
 
@@ -965,7 +966,8 @@ footer .socials{
     /* section 4 */
     .sec-4{
         --img-w:100%;
-        height: 114.9rem;
+        --img-h:51.2rem;
+        height: 105.9rem;
     }    
 
     /* section 6 */
@@ -1060,6 +1062,12 @@ footer .socials{
             flex-grow:1 !important;
         }
 
+    /* section 4 */
+    .sec-4{
+        --img-h:38.9rem;
+        height: 96.9rem;
+    }    
+
      /* section 6 */
     .sec-6 .wrapper{
         /*circle*/
@@ -1088,7 +1096,7 @@ footer .socials{
     .font-xxlg {
         font-size: 3rem;
     }
-        .font-lg {
+        .font-lg , .font-xlg{
         font-size: 3.6rem;
     }
 
@@ -1151,7 +1159,22 @@ footer .socials{
             font-size: 2.2rem
         }
 
+    /*section 3*/
+    .sec-3 > .wrapper {
+        margin: 6.4rem auto 15.4rem auto;
+    }
 
+    /* section 4 */
+    .sec-4 .wrapper .container {
+        top: -27rem;
+        gap:4rem;
+    }
+
+
+    .sec-4{
+        --img-h:24.5rem;
+        height: 96.9rem;
+    }
         /* section 6 */
     .sec-6 .wrapper{
         /*circle*/
@@ -1186,10 +1209,7 @@ footer .socials{
         padding: 0 1rem;
     }
 
-    .font-xlg {
-        font-size: 5rem;
-    }
-
+    
     .font-lg{
         font-size: 3rem;
     }
