@@ -450,6 +450,12 @@ header > nav ul li a:hover{
 	padding:1.3rem 3.4rem;
 }
 
+.contact-us .container .col-1 form input[type="submit"]:hover{
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+	cursor: pointer;	
+}
+
+
 /* accordian */
 .contact-us .container .col-2{
 	background-color: var(--clr-muted-black);
@@ -468,6 +474,7 @@ header > nav ul li a:hover{
 	background-color: var(--clr-white);
 	padding:1.2rem 1.8rem;
 	justify-content: space-between;
+	cursor: pointer;
 }
 
 .contact-us .container .col-2 > #accordian li label + input[type="radio"]{
