@@ -154,6 +154,7 @@ header{
 header > div.menu-button{
 	font-size: 2.7rem;
 	padding: 1.9rem 0;
+	cursor: pointer;
 }
 
 header > nav{
@@ -387,6 +388,41 @@ header > nav ul li a:hover{
 	background-color: var(--clr-yellow);
 }
 
+/* manager*/
+.manager > .row-1{
+	background-color: var(--clr-yellow);
+}
+
+.manager > .row-1 .container{
+	padding:6rem 2rem;
+	text-align: center;	
+	min-height: 60rem;
+}
+
+.manager > .row-1 .container > .quote{
+	font-size: 8rem !important;
+}
+
+.manager > .row-1 .container p{
+	margin-bottom: 18rem;
+}
+
+.manager > .row-2 .container{
+	padding:4rem 0;
+	gap:4rem;
+	margin-top: -27rem;
+	text-align: center;
+}
+
+.manager > .row-2 .container .manager-img{
+	background-image: url("./images/manager.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:clamp(31rem,50vw,32.6rem);
+	height:clamp(31rem,50vw,32.6rem);
+	border-radius: 50%;
+}
 
 /* follow us */
 .follow-us{
