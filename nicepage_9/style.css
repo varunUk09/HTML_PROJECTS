@@ -6,7 +6,7 @@
 	margin:0;padding: 0;
 	box-sizing: border-box;
 	transition: all 0.5s;
-	/*border:1px solid red;*/
+	list-style: none;
 }
 
 :root{
@@ -388,6 +388,44 @@ header > nav ul li a:hover{
 	background-color: var(--clr-yellow);
 }
 
+
+/* our service 2 */
+
+.our-services-2 .container{
+	margin:3rem 1rem;
+	flex-wrap: wrap;
+}
+
+.our-services-2 .container .col-1 {
+	padding: 3rem 0;
+	flex:2;
+}
+
+
+.our-services-2 .container .col-1 ul{
+	gap:2rem;
+	margin-bottom: 2rem;
+}
+
+.our-services-2 .container .col-1 ul li{
+	gap:1.5rem;
+}
+
+
+.our-services-2 .container .col-1 ul li span{
+	color:var(--clr-yellow);
+}
+
+.our-services-2 .container .col-2{
+	background-image: url("./images/service-provider.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	flex:1;
+	min-height: 34rem;
+}
+
+
 /* manager*/
 .manager > .row-1{
 	background-color: var(--clr-yellow);
@@ -546,6 +584,10 @@ header > nav ul li a:hover{
 		min-width: 100%;
 	}
 
+	.our-services-2 .container .col{
+		flex-basis: 100%;
+	}
+
 	.contact-us .container .col{
 		width: 100%;
 	}
@@ -559,5 +601,9 @@ header > nav ul li a:hover{
 @media(max-width: 575px){
 	.leadership-points .container > .points > h4{
 		font-size: 2.4rem;
+	}
+
+	.our-services-2 .container .col-1 ul li{
+		font-size: 2rem;
 	}
 }
