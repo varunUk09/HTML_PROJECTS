@@ -131,6 +131,7 @@ p{
 
 .read-more-btn:hover{
 	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+	cursor: pointer;
 }
 
 /*=================== global end ====================*/
@@ -174,7 +175,7 @@ header > nav{
 
 header > nav ul{
 	text-align: center;
-	list-style: none;
+
 }
 
 header > nav ul li:first-child{
@@ -218,8 +219,7 @@ header > nav ul li a:hover{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	justify-content: center;
-	height: clamp(62.1rem,80vw,74.9rem)
+	height: clamp(62.1rem,80vw,74.9rem);
 }
 
 .hero .container{
