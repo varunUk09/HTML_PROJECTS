@@ -360,6 +360,41 @@ header > nav ul li a:hover{
 }
 
 
+/* our team */
+
+.our-team .container .row-1{
+	max-width: 80rem;
+	min-height: 25rem;
+	padding: 3rem;
+	background-color: var(--clr-yellow);
+}
+
+
+.our-team .container .row-2{
+	margin-top: -14rem;
+	flex-direction: row-reverse;
+	width: 84.2rem;
+	min-height: 58.5rem;
+	align-self: flex-end;
+	gap:2rem;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+}
+
+.our-team .container .row-2 .img{
+	width: 31.7%;
+	max-width: 42.1rem;
+	height:27.7rem;
+}
+
+.our-team .container .row-2 .img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
 /* our services -1 */
 .our-services-1 .container{
 	text-align: center;
@@ -565,6 +600,17 @@ header > nav ul li a:hover{
 }
 
 /*======= Media query =======*/
+@media(max-width: 991px){
+	.our-team .container .row-2{
+		width: 100%;
+	}
+
+	.our-team .container .row-2 .img{
+		width: 31.5rem;
+		height:35.5rem;
+	}
+}
+
 @media(max-width: 767px){
 	.about .container{
 		flex-direction: column;
@@ -578,6 +624,11 @@ header > nav ul li a:hover{
 
 	.abt-us > .container > .col{
 		min-width:100%;
+	}
+
+	.our-team .container .row-2 .img{
+		width:80%;
+		height:50.5rem;
 	}
 
 	.our-services-1 .container > div{
@@ -596,6 +647,7 @@ header > nav ul li a:hover{
 		flex-basis: 100%;
 		padding:1rem !important;
 	}
+
 }
 
 @media(max-width: 575px){
@@ -603,6 +655,9 @@ header > nav ul li a:hover{
 		font-size: 2.4rem;
 	}
 
+	.our-team .container .row-2 .img{
+		height:30rem;
+	}
 	.our-services-2 .container .col-1 ul li{
 		font-size: 2rem;
 	}
