@@ -186,15 +186,12 @@ body{
 /* hero section */
 .hero{
 	background-color: var(--clr-blue-lighter);
-	padding: 1.6rem 0 0 0 ;
-	display: flex;
-	min-height:85.3rem;
+	padding: 1.6rem 0 0 0;
 }
 
-.hero > .container{
-	
+.hero > .container{	
 	position: relative;
-
+	min-height:85.3rem;
 }
 
 .hero > .container > .content-1{
@@ -266,7 +263,7 @@ body{
 	.hero > .container > .content-2 {
     	width: 57.3rem;
     	height: 51.4rem;
-    	bottom: 2rem;
+    	bottom: 4rem;
 	}
 }
 
@@ -288,13 +285,12 @@ body{
 		width:34rem; 
 	}
 
-	.hero{
-    	min-height: 65.3rem;	
-	}
+
 	.hero > .container {
 
     	padding-bottom: 5rem;
     	overflow: hidden;
+    	min-height: 65.3rem;	
 	}
 	.hero > .container > .content-2 {
     	width: 100%;
