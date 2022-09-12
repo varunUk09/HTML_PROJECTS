@@ -287,9 +287,9 @@ body{
 
 
 	.hero > .container {
-		
+
     	overflow: hidden;
-    	min-height: 65.3rem;	
+    	min-height: 1000rem;	
 	}
 	.hero > .container > .content-2 {
     	width: 100%;
