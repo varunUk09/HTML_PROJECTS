@@ -286,7 +286,7 @@ body{
     }
 
     .hero > .container {
-        height: auto;
+        height:57rem;
     }   
 
     .hero > .container > .content-2 {
