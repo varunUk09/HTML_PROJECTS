@@ -188,7 +188,7 @@ body{
 	background-color: var(--clr-blue-lighter);
 	padding: 1.6rem 0 0 0 ;
 	display: flex;
-	min-height:85.3rem;
+	min-height:145vh;
 }
 
 .hero > .container{
@@ -289,7 +289,7 @@ body{
 	}
 
 	.hero{
-    	min-height: 65.3rem;	
+    	min-height: 109vh;	
 	}
 	.hero > .container {
 
