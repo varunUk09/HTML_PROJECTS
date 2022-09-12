@@ -285,15 +285,13 @@ body{
         width:34rem; 
     }
     .hero > .container{
-        height:55rem;
+        height:74rem;
     }
     .hero > .container > .content-2 {
        background: none;
        width: 100%;
-       top:50%;
-       position: initial;
-       margin-top: -2rem;
-    }
+       top:65%;}
+
     .hero > .container > .content-2 > * {
         width:100%;
         height: 22.1rem;
