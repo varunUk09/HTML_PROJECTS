@@ -188,11 +188,13 @@ body{
 	background-color: var(--clr-blue-lighter);
 	padding: 1.6rem 0 0 0 ;
 	display: flex;
+	min-height:85.3rem;
 }
 
 .hero > .container{
+	
 	position: relative;
-	min-height:85.3rem;
+
 }
 
 .hero > .container > .content-1{
@@ -234,7 +236,7 @@ body{
 	width: 64.552rem;
 	height: 57.801rem;
 	position: absolute;
-	bottom:4rem;
+	bottom:2rem;
 	right:0;
 	background-image: url("./images/svgs/img_support.svg");
 	background-repeat: no-repeat;
@@ -264,6 +266,7 @@ body{
 	.hero > .container > .content-2 {
     	width: 57.3rem;
     	height: 51.4rem;
+    	bottom: 5rem;
 	}
 }
 
@@ -284,8 +287,12 @@ body{
 	.container{
 		width:34rem; 
 	}
+
+	.hero{
+    	min-height: 65.3rem;	
+	}
 	.hero > .container {
-    	min-height: 63.3rem;
+
     	padding-bottom: 5rem;
     	overflow: hidden;
 	}
