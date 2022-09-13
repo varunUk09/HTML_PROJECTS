@@ -243,6 +243,10 @@ body{
     background-color: var(--clr-white);
 }
 
+.newsletter > .container {
+    min-height: 34.6rem;
+}
+
 
 .newsletter > .container > .newsletter_box{
     max-width: 75.4rem;
@@ -252,7 +256,7 @@ body{
     border-radius: 5rem;
     gap:2rem;
     padding:6rem 4rem;
-    margin-top: -12rem;
+    margin-top: -18rem;
     background-color: var(--clr-white);
     z-index: 10;
     text-align: center;
@@ -367,7 +371,7 @@ body{
     }
 
     .newsletter > .container > .newsletter_box{
-        margin-top: -9rem;
+        margin-top: -12rem;
         padding:6rem 2rem;
     }
 
