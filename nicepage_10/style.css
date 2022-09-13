@@ -340,7 +340,7 @@ body{
 
 /*levrage*/
 .levrage{
-    padding:2rem 0;
+    padding:5rem 0;
     background-color: var(--clr-blue-lighter);
     text-align: center;
 }
@@ -374,6 +374,54 @@ body{
 }
 
 
+/* about us */
+
+.about-us .container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+
+
+.about-us .container > .col{
+    flex:1;
+    padding:1rem;
+    gap:2.2rem;
+}
+
+.about-us .container > .col-1{
+    padding:3rem 1rem;
+}
+
+.about-us .container > .col-1 > p{
+    text-align: justify;
+}
+
+.about-us .container > .col-1 > ul{
+    margin-top:8rem;
+}
+
+.about-us .container > .col-1 > ul > li{
+    gap:1.6rem;
+}
+
+.about-us .container > .col-1 h3{
+    font-family: 'Roboto',sans-serif;
+}
+
+.about-us .container > .col-1 h3,i,
+.about-us .container > .col-2 h5 > a
+{
+    color:var(--clr-bluish);
+}
+
+.about-us .container > .col-2 > img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
 
     /*====== media queries ======*/
 
@@ -397,6 +445,9 @@ body{
     .hero > .container > .content-2 > * {
         width: 47.5rem;
         height: 38.6rem;
+    }
+    .about-us .container > .col{
+        flex-basis: 100%;
     }
 }
 
