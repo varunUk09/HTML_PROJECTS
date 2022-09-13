@@ -162,7 +162,7 @@ body{
 .hero > .container{
     height:auto;
     position: relative;
-    height: 90rem;
+    min-height: 90rem;
     overflow: hidden;
 }
 
@@ -352,7 +352,7 @@ body{
     }
 
     .hero > .container {
-        height:57rem;
+        min-height:50vh;
     }   
 
     .hero > .container > .content-2 {
