@@ -37,7 +37,7 @@ html{
 .font-size-4{
     font-size: 2rem;
 }
-.font-size-4{
+.font-size-4_{
     font-size: 2.4rem;
 }
 .font-size-5{
@@ -78,6 +78,24 @@ html{
 .line-height-sm{
     line-height: 1.6;
 }
+
+.img-source{
+    font-family: "Open Sans",sans-serif;
+}
+
+.img-source{
+    font-weight: 500;
+}
+
+.img-source > a{
+    color: var(--clr-black);
+    border-bottom: .1rem solid var(--clr-black);
+}
+
+.img-source > a:hover{
+    border-bottom-color: var(--clr-bluish);
+}
+
 /* global end */
 
 /* header start */
@@ -179,8 +197,7 @@ body{
     font-family: 'Roboto',sans-serif;
 }
 
-.hero > .container > .content-1 h5,
-.hero > .container > .content-1 p,
+ .hero > .container > .content-1 p,
 .hero > .container > .content-1 .learn_more_btn{
     font-family: "Open Sans",sans-serif;
 }
@@ -189,23 +206,11 @@ body{
     font-weight: 400;
 }
 
-.hero > .container > .content-1 h5,
-.hero > .container > .content-1 .learn_more_btn{
+ .hero > .container > .content-1 .learn_more_btn{
     font-weight: 500;
 }
 
-.hero > .container > .content-1 > .img-source > a{
-    color: var(--clr-black);
-    border-bottom: .1rem solid var(--clr-black);
-}
-
-.hero > .container > .content-1 > .img-source > a:hover{
-    border-bottom-color: var(--clr-bluish);
-}
-
-
-
-.hero > .container > .content-1 .learn_more_btn{
+ .hero > .container > .content-1 .learn_more_btn{
     color:var(--clr-white);
     background-color: var(--clr-bluish);
     width: fit-content;
@@ -301,6 +306,45 @@ body{
     font-weight: 500;
 }
 
+
+/* features and services */
+.features{
+    background-color: var(--clr-blue-lighter);
+    padding: 4rem 0;
+}
+.features .container{
+    gap:2rem;
+    min-height: 110.3rem;
+    text-align:center;
+}
+
+.features .container > h4,h1{
+    font-family: 'Roboto',sans-serif;
+}
+
+.features .container > h1{
+    color:var(--clr-bluish);
+}
+
+.features .container > .card-container{
+    gap:2rem;
+    flex-wrap: wrap;
+}
+
+.features .container > .card-container .card{
+    background-color: var(--clr-white);
+    border-radius: 3rem;
+    padding:2rem;
+    gap:2rem;
+    text-align: center;
+    flex:1;
+    min-width:29.533rem;
+}
+
+.features .container > .card-container .card > img{
+    width: 18.5rem;
+    height: 21.3rem;
+}
 
 
     /*====== media queries ======*/
