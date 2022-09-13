@@ -565,7 +565,7 @@ body{
     }
     .purchase .container > .row-2 > .card.discount::before {
         top: 6rem;
-        right: 9rem !important;
+        right:initial !important;
     }
 }
 
