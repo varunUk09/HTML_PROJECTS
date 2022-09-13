@@ -108,6 +108,20 @@ font-weight: 500;
     background: var(--clr-black);}
 
 
+/*about us and purchase list */
+
+.list{
+    gap:1.8rem;
+}
+
+.list > li{
+    gap:1.6rem;
+}
+
+.list i{
+    color:var(--clr-bluish);
+}
+
 /* global end */
 
 /* header start */
@@ -402,15 +416,13 @@ body{
     margin-top:8rem;
 }
 
-.about-us .container > .col-1 > ul > li{
-    gap:1.6rem;
-}
+
 
 .about-us .container > .col-1 h3{
     font-family: 'Roboto',sans-serif;
 }
 
-.about-us .container > .col-1 h3,i,
+.about-us .container > .col-1 h3,
 .about-us .container > .col-2 h5 > a
 {
     color:var(--clr-bluish);
@@ -421,7 +433,106 @@ body{
     width: 100%;
 }
 
+/* purchase */
+.purchase .container{
+    padding-top: 4rem;
+    padding-bottom: 4rem; 
+    gap:2rem;
+}
 
+.purchase .container > h4{
+    font-family: 'Roboto',sans-serif;
+}
+
+.purchase .container > .row-1{
+    gap:2rem;
+ }
+
+.purchase .container > .row-1 > .card{
+    padding: 3rem;
+ }
+
+ .purchase .container > .row-1 > .card-1{
+    flex: 1;
+    text-align: justify;
+    line-height: 1.6;
+ }
+
+
+.purchase .container > .row-2 {
+    width:100%;
+    margin:1.6rem 0;
+}
+
+.purchase .container > .row-2 > .card{
+    background-color: var(--clr-white);
+    color:var(--clr-bluish);
+    padding:3rem;
+    gap:4rem;
+    flex: 1;
+    flex-shrink: 0;
+    border-radius: 2rem;
+    min-height: 44.1rem;
+    justify-content:flex-start;
+    position: relative;
+}
+
+.purchase .container > .row-2 > .card .plan-info{
+    color:var(--clr-black);
+}
+
+
+.purchase .container > .row-2 > .card.active{
+    background-color: var(--clr-bluish);
+    color:var(--clr-white);
+}
+
+.purchase .container > .row-2 > .card.active .plan-info{
+    color:inherit;
+}
+
+.purchase .container > .row-2 > .card.discount::before{
+    position:absolute;
+    right: 2rem;
+    content: "SAVE 25%";
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: var(--clr-bluish);
+    color:var(--clr-white);
+    padding:.5rem 2.3rem;
+    border-radius: 3rem;
+}
+
+
+.purchase .container > .row-2 > .card > h4{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+}
+
+.purchase .container > .row-2 > .card > h1{
+    font-family: "PT Sans",sans-serif;
+    font-weight: 700;
+}
+
+.purchase .container > .row-2 > .card > a{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    padding:2rem 3rem;
+    width: fit-content;
+    background-color: var(--clr-bluish);
+    border-radius: 1rem;
+    color:var(--clr-white);
+} 
+
+.purchase .container > .row-2 > .card.active > a{
+    background-color: var(--clr-white);
+    color:var(--clr-bluish);  
+}
+
+
+.purchase .container > .row-2 > .card > a > i{
+    color:var(--clr-black);
+}
 
     /*====== media queries ======*/
 
@@ -449,6 +560,13 @@ body{
     .about-us .container > .col{
         flex-basis: 100%;
     }
+    .purchase .container > .row-1 > .card {
+        padding: 1.6rem;
+    }
+    .purchase .container > .row-2 > .card.discount::before {
+        top: 6rem;
+        right: 9rem !important;
+    }
 }
 
 @media(max-width: 767px){
@@ -471,6 +589,12 @@ body{
     }
     .levrage .container > .card-container .card{
         min-width: 100%;
+    }
+    .purchase .container > .row-1{
+        flex-direction: column;
+    }
+    .purchase .container > .row-2 {
+        flex-direction: column;
     }
 }
 
