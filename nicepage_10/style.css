@@ -542,6 +542,7 @@ body{
 .planning .container{
     min-height: 50rem;
     gap:1rem;
+    padding-bottom: 10rem;
 }
 
 
@@ -605,6 +606,38 @@ body{
     width: 39.67rem;
 }
 
+/* acheiviments */
+.acheivements{
+    background-color: var(--clr-white);
+    min-height: 30.7rem;
+}
+
+.acheivements .container .content{
+    gap:3rem;
+    margin-top: -5rem;
+    flex-wrap: wrap;
+}
+
+.acheivements .container .content > div{
+    background-color: var(--clr-white);
+    border-radius: 3rem;
+    flex: 1;
+    padding:1rem 1rem 5rem 1rem;
+    gap:2rem;
+    text-align: center;
+}
+
+.acheivements .container .content > div > h2{
+    color: var(--clr-bluish);
+    font-family: 'Montserrat',sans-serif;
+}
+
+.acheivements .container .content > div > h3{
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: .2rem;
+    font-weight: 400;
+}
+
 /* contact us*/
 
 .contact_bottom{
@@ -613,6 +646,8 @@ body{
 
 .contact_bottom .container{
     min-height: 64.9rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
 }
 .contact_bottom .container .col{
     width: 50% !important;
@@ -664,9 +699,7 @@ body{
 }
 
 
-
-
-    /*====== media queries ======*/
+/*====== media queries ======*/
 
 
 @media(max-width: 1199px){
@@ -722,6 +755,9 @@ body{
     .planning .container .left__div p{
         width: 100%;
     }
+    .acheivements .container .content > div{
+        flex-basis: 47%;
+    }
 }
 
 @media(max-width: 767px){
@@ -753,6 +789,8 @@ body{
     }
     .contact_bottom .container{
         flex-direction: column;
+        padding-top:4rem;
+        padding-bottom:4rem;
     }
     .contact_bottom .container .col{
         width: 100% !important;
@@ -794,6 +832,9 @@ body{
     }
     .planning .container .left__div img{
         height: 20.7rem;
+    }
+    .acheivements .container .content > div{
+        flex-basis: 100%;
     }
 
 }
