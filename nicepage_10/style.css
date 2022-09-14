@@ -534,7 +534,76 @@ body{
     color:var(--clr-black);
 }
 
+/*planning*/
+.planning{
+    background-color: var(--clr-blue-lighter);
+}
 
+.planning .container{
+    min-height: 50rem;
+    gap:1rem;
+}
+
+
+.planning .container > div{
+    flex:1;
+    padding:2rem;
+    gap:2rem;
+}
+
+.planning .container > div:nth-child(1){
+    text-align: center;
+    padding-left: 7.8rem;
+    justify-content: flex-end;
+}
+
+.planning .container .left__div img{
+    height: 28.5rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.planning .container .left__div h4,
+.planning .container .right__div h2{
+    font-family: 'Roboto',sans-serif;
+}
+
+.planning .container .left__div h4{
+     font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.planning .container .left__div p,
+.planning .container .right__div p{
+    line-height: 3.2rem;
+}
+
+.planning .container .left__div p{
+    width: 41rem;
+}
+
+.planning .container .left__div .down_arrow_box{
+    background-color: var(--clr-bluish);
+    padding: 1.4rem 2rem;
+    border-radius: 50%;
+    color:var(--clr-white);
+    font-size: 2rem;
+    width: fit-content;
+    margin-top: 1.1rem;
+}
+
+.planning .container .right__div{
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+
+
+.planning .container .right__div img{
+    width: 39.67rem;
+}
 
 /* contact us*/
 
@@ -630,6 +699,29 @@ body{
         top: 6rem;
         right:initial !important;
     }
+    .planning .container{
+        flex-direction: column;
+        padding-top:3rem;
+    }
+
+    .planning .container > div{
+        padding: 2rem 0 !important;
+    }
+
+    .planning .container > div:nth-child(1){
+        justify-content: center;
+        padding:initial;
+    }
+    .planning .container .left__div img{
+        height: 42.8rem;
+    }
+
+    .planning .container .right__div img{
+        width:88%;
+    }
+    .planning .container .left__div p{
+        width: 100%;
+    }
 }
 
 @media(max-width: 767px){
@@ -667,6 +759,9 @@ body{
         padding-right: 0;
         padding-left: 0;
     }
+    .planning .container .left__div img{
+        height: 33.7rem;
+    }
 }
 
 @media(max-width: 575px){
@@ -696,6 +791,9 @@ body{
     .newsletter > .container > .newsletter_box{
         margin-top: -12rem;
         padding:6rem 2rem;
+    }
+    .planning .container .left__div img{
+        height: 20.7rem;
     }
 
 }
