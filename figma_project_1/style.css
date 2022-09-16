@@ -25,6 +25,19 @@ html{
 	font-size: 62.5%;
 }
 
+.container{
+	max-width: 114rem;
+	margin:0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+h1{
+	font-size: 3.6rem;
+	font-weight: 700;
+	color: var(--secondaryColor);
+}
+
 /* header */
 header{
 	background: linear-gradient(#EBE2FF 0%, rgba(234, 225, 254, 0.5) 41.95%, rgba(234, 225, 254, 0) 100%);
@@ -32,12 +45,12 @@ header{
 }
 
 header .container{
-	max-width: 114rem;
-	margin:0 auto;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 header .container .menu_btn{
@@ -46,7 +59,7 @@ header .container .menu_btn{
 
 header .container .branding{
 	height: 3.3rem;
-	margin-right: -15rem;
+	margin-right: -29rem;
 }
 
 
@@ -82,6 +95,120 @@ header .container .cta-btns ul li a.active{
 }
 
 
+/* hero section */
+
+section.hero{
+	background-color: white;
+    background-image: url(./images/stipe.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.hero .container{
+	padding:3.6rem 1rem;
+}
+
+
+.hero .container .wrapper {
+    width: 61.6rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero .container .wrapper .heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;	
+	color:var(--secondaryColor);
+}
+
+.hero .container .wrapper .heading blockquote{
+	width:66%;
+	font-size: 1.6rem;
+}
+
+
+.hero .container .wrapper .heading blockquote .blockquote__text{
+	position: relative;
+}
+
+.hero .container .wrapper .heading blockquote .blockquote__text::before,
+.hero .container .wrapper .heading blockquote .blockquote__text::after{
+	color: #EBE2FF;
+	font-size: 12rem;
+	position: absolute;
+}
+
+
+.hero .container .wrapper .heading blockquote .blockquote__text::before{
+	content: "\201c";
+	top:-100%;
+	left:-15%;
+}
+
+.hero .container .wrapper .heading blockquote .blockquote__text::after{
+	content: "\201d";
+	top: 0;
+	right:-17%;
+}
+
+
+.hero .container .wrapper .heading blockquote .blockquote__credit{
+	font-weight: 700;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+
+.hero .container .wrapper .about-us{
+	position: relative;
+	color:black;
+}
+
+.hero .container .wrapper .about-us h1{
+	position: absolute;
+    writing-mode: tb;
+    rotate: 180deg;
+    left: -5.3rem;
+    margin: 0!important;
+}
+
+
+.hero .container .wrapper .about-us p{
+	font-size: 1.5rem;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+.hero .container .wrapper .about-us p + p,
+.hero .container .wrapper .our-mission p + p{
+	margin-top: 2rem;
+}
+
+
+.hero .container .wrapper .our-mission{
+	width: 62%;
+    align-self: flex-end;
+}
+
+.hero .container .wrapper .our-mission h4{
+	font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--secondaryColor);
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.hero .container .wrapper .our-mission p{
+	font-size: 1.6rem;
+    line-height: 1.5;
+}
 
 
 @media(max-width: 991px){
@@ -91,9 +218,8 @@ header .container .cta-btns ul li a.active{
 }
 
 
-
-@media(max-width: 618px){
-	header .container .cta-btns {
+@media(max-width: 768px){
+		header .container .cta-btns {
 		/*display: none;*/
 		position: absolute;
     	top: 0;
@@ -101,6 +227,7 @@ header .container .cta-btns ul li a.active{
     	width: 30rem;
     	height: 100vh;
     	background: rgba(0,0,0,0.5);
+    	z-index: 999;
 	}
 	header .container .cta-btns .close-nav{
 		display:block;
@@ -115,7 +242,42 @@ header .container .cta-btns ul li a.active{
 	header .container .cta-btns ul a{
 		font-size: 1.8rem !important;
 		color: white !important;
+	}	
+
+	.hero .container .wrapper{
+		width: 48rem;
 	}
 
+	.hero .container .wrapper .about-us h1 {
+    	position:initial;
+    	writing-mode:initial;
+    	rotate:0deg;
+    	margin-bottom: 2rem !important;
+	}
 
+	.hero .container .wrapper .our-mission {
+    	width: 100%;
+	}
+}
+
+
+@media (max-width: 576px){
+	.hero .container .wrapper {
+    	width: 33rem;
+	}
+	.hero .container .wrapper .heading blockquote .blockquote__text::before {
+    	top: -61%;
+    	left: -25%;
+	}
+
+	.hero .container .wrapper .heading blockquote .blockquote__text::after {
+    	right: -25%;
+	}
+}
+
+
+@media (max-width: 371px){
+	.hero .container .wrapper {
+    	width:100%;
+	}
 }
