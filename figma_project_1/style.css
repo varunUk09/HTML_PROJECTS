@@ -211,9 +211,43 @@ section.hero{
 }
 
 
+/* section intro */
+.intro{
+	background-color: var(--greyColor);
+}
+
+.intro .container{
+	display: flex;
+	gap:1.6rem;
+	padding:7rem 1rem;
+}
+
+.intro .container .left{
+	font-weight: 800;
+    font-size: clamp(3.6rem,13.9vw,16rem);
+    line-height: 0.8;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.intro .container .right{
+	font-size: 1.6rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
 @media(max-width: 991px){
 	header .container .branding {
     	margin-right: 0rem;
+	}
+	.intro .container {
+    	flex-direction: column;
+    	gap:3rem;
 	}
 }
 
