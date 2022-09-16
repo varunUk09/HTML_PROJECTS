@@ -240,6 +240,26 @@ section.hero{
 }
 
 
+/* our team */
+.core-team .container{
+	padding: 7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+.core-team .container .members{
+	display: flex;
+    gap: 2rem;
+    width: 95%;
+    padding: 3rem 0;
+}
+
+
+
 
 @media(max-width: 991px){
 	header .container .branding {
@@ -296,6 +316,10 @@ section.hero{
 
 	.hero .container .wrapper .our-mission {
     	width: 100%;
+	}
+
+	.core-team .container .members {
+    	flex-direction: column;
 	}
 }
 
