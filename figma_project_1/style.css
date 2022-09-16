@@ -249,6 +249,11 @@ section.hero{
     	flex-direction: column;
     	gap:3rem;
 	}
+
+	.intro .container .right{
+		width: 85%;
+    	margin: 0 auto;
+	}
 }
 
 
@@ -307,11 +312,16 @@ section.hero{
 	.hero .container .wrapper .heading blockquote .blockquote__text::after {
     	right: -25%;
 	}
+	
 }
 
 
 @media (max-width: 371px){
 	.hero .container .wrapper {
     	width:100%;
+	}
+	.intro .container .right{
+		width:initial;
+    	margin: 0 auto;
 	}
 }
