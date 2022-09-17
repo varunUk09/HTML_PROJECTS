@@ -32,10 +32,20 @@ html{
 	padding-right: 1rem;
 }
 
+.wrapper{
+	width: 96rem;
+	margin:0 auto;
+}
+
 h1{
 	font-size: 3.6rem;
 	font-weight: 700;
 	color: var(--secondaryColor);
+}
+
+p{
+	font-size: 1.6rem;
+	line-height: 1.5;
 }
 
 /* header */
@@ -181,8 +191,7 @@ section.hero{
 
 
 .hero .container .wrapper .about-us p{
-	font-size: 1.5rem;
-	line-height: 1.4;
+
 	text-align: justify;
 }
 
@@ -205,10 +214,7 @@ section.hero{
     margin-bottom: 1.6rem;
 }
 
-.hero .container .wrapper .our-mission p{
-	font-size: 1.6rem;
-    line-height: 1.5;
-}
+
 
 
 /* section intro */
@@ -274,8 +280,7 @@ section.hero{
 }
 
 .our-standard .container .cards{
-	width: 96rem;
-	margin:0 auto;
+
 	display: flex;
 	gap:1.6rem;
 	flex-wrap: wrap;
@@ -321,9 +326,33 @@ section.hero{
 	background-color:#1f8fff;
 }
 
+/* quality */
+section.quality{
+	background-color: var(--greyColor);
+}
+
+.quality .container .wrapper{
+	text-align: center;
+	padding:5rem 0;
+	width: 72rem;
+}
+
+.quality .container .wrapper img{
+	margin-bottom: 2rem;
+	width: 50rem;
+	filter: brightness(0.95);
+}
+
+.quality .container .wrapper p{
+	margin-top:2rem;
+}
+
 
 
 @media(max-width: 991px){
+	.wrapper{
+    	width: 72rem;
+	}
 	header .container .branding {
     	margin-right: 0rem;
 	}
@@ -337,9 +366,7 @@ section.hero{
     	margin: 0 auto;
 	}
 
-	.our-standard .container .cards {
-    	width: 72rem;
-	}
+
 	.our-standard .container .cards .card {
     	flex-basis: 48.8%;
 	}
@@ -347,6 +374,10 @@ section.hero{
 
 
 @media(max-width: 768px){
+	.wrapper {
+    	width: 54rem !important;
+	
+	}
 		header .container .cta-btns {
 		/*display: none;*/
 		position: absolute;
@@ -372,9 +403,7 @@ section.hero{
 		color: white !important;
 	}	
 
-	.hero .container .wrapper{
-		width: 48rem;
-	}
+
 
 	.hero .container .wrapper .about-us h1 {
     	position:initial;
@@ -392,13 +421,7 @@ section.hero{
 	}
 
 
-
-	.our-standard .container .cards {
-    	width: 54rem;
-	
-	}
-
-	.our-standard .container .cards .card {
+.our-standard .container .cards .card {
     	flex-basis:100%;
 	}
 
@@ -406,8 +429,9 @@ section.hero{
 
 
 @media (max-width: 576px){
-	.hero .container .wrapper {
-    	width: 33rem;
+	
+	.wrapper {
+    	width: 100% !important;
 	}
 	.hero .container .wrapper .heading blockquote .blockquote__text::before {
     	top: -61%;
@@ -418,17 +442,15 @@ section.hero{
     	right: -25%;
 	}
 
-	.our-standard .container .cards {
-    	width: 100% !important;
+	.quality .container .wrapper img{
+		width: 95%;
 	}
 	
 }
 
 
 @media (max-width: 371px){
-	.hero .container .wrapper {
-    	width:100%;
-	}
+
 	.intro .container .right{
 		width:initial;
     	margin: 0 auto;
