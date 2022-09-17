@@ -327,15 +327,20 @@ section.hero{
 }
 
 /* quality */
+
+
+.quality .container .wrapper,
+section.help .container .wrapper{
+	text-align: center;
+	padding:7rem 0;
+	width: 72rem;
+}
+
+
 section.quality{
 	background-color: var(--greyColor);
 }
 
-.quality .container .wrapper{
-	text-align: center;
-	padding:5rem 0;
-	width: 72rem;
-}
 
 .quality .container .wrapper img{
 	margin-bottom: 2rem;
@@ -347,6 +352,16 @@ section.quality{
 	margin-top:2rem;
 }
 
+/* want help */
+section.help{
+	background-color: white;
+}
+
+section.help .container .wrapper{
+	display: flex;
+	flex-direction: column;
+	gap:2.5rem;
+}
 
 
 @media(max-width: 991px){
