@@ -364,6 +364,75 @@ section.help .container .wrapper{
 }
 
 
+/* footer */
+footer{
+	background: linear-gradient(rgba(163, 230, 216, 0) 0%,rgba(77, 38, 170, 0.3) 10.17%,rgba(77, 38, 170, 0.7) 58.33%,#4D26AA 100%);
+	mix-blend-mode: multiply;
+}
+
+footer .container .wrapper{
+	display: flex;
+    justify-content: space-between;
+    padding:6rem 0;
+}
+
+footer .container .wrapper ul{
+	display: flex;
+	flex-direction: column;
+	gap:2rem;
+}
+
+footer .container .wrapper ul a{
+	color:white;
+}
+
+
+footer .container .wrapper .newsletter{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap:2rem;
+	color: white;
+	text-align: center;
+}
+
+footer .container .wrapper .newsletter form{
+	display: flex;
+	gap:1.6rem;
+}
+
+footer .container .wrapper .newsletter form > input{
+	padding:1rem;
+	border:none;
+	outline-color: black;
+	font-size: 1.6rem;
+	border-radius: 1rem;
+}
+
+footer .container .wrapper .newsletter form > input[type="text"]{
+	width:20rem;
+}
+
+footer .container .wrapper .newsletter form > input[type="email"]{
+	flex:1;
+}
+
+footer .container .wrapper .newsletter form > input[type="submit"]{
+	width: max-content;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    color: white;
+    background: #14cfcf;
+}
+
+footer .container .wrapper .footer-logo{
+	height: 2rem;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+
+}
+
+
 @media(max-width: 991px){
 	.wrapper{
     	width: 72rem;
@@ -384,6 +453,14 @@ section.help .container .wrapper{
 
 	.our-standard .container .cards .card {
     	flex-basis: 48.8%;
+	}
+	footer .container .wrapper{
+		flex-direction: column;
+		gap:2rem;
+	}
+	footer .container .wrapper ul {
+    	flex-direction: row !important;
+    	justify-content: center;
 	}
 }
 
@@ -438,6 +515,12 @@ section.help .container .wrapper{
 
 .our-standard .container .cards .card {
     	flex-basis:100%;
+	}
+	footer .container .wrapper .newsletter form {
+   		 flex-direction: column;
+	}
+	footer .container .wrapper .newsletter form > input{
+		width: 100% !important;
 	}
 
 }
