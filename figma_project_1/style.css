@@ -274,7 +274,7 @@ section.hero{
 }
 
 .our-standard .container .cards{
-	width: 72rem;
+	width: 96rem;
 	margin:0 auto;
 	display: flex;
 	gap:1.6rem;
@@ -286,8 +286,7 @@ section.hero{
 	background: rgba(255,255,255,0.5);
     font-size: 1.8rem;
     height: 15rem;
-    width: 100%;
-    max-width: 35rem;
+    flex-basis:49.1%;
     border-radius: 4rem;
     display: flex;
     justify-content: center;
@@ -336,6 +335,13 @@ section.hero{
 	.intro .container .right{
 		width: 85%;
     	margin: 0 auto;
+	}
+
+	.our-standard .container .cards {
+    	width: 72rem;
+	}
+	.our-standard .container .cards .card {
+    	flex-basis: 48.8%;
 	}
 }
 
@@ -386,13 +392,14 @@ section.hero{
 	}
 
 
+
 	.our-standard .container .cards {
     	width: 54rem;
-    	flex-direction: column;
-    	align-items: center;
+	
 	}
+
 	.our-standard .container .cards .card {
-    	max-width:100% !important;
+    	flex-basis:100%;
 	}
 
 }
