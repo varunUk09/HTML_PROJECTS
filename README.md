@@ -72,10 +72,41 @@ My_Design [Link](https://varunuk09.github.io/HTML_PROJECTS/nice_page_7/)
 
 ====================================
 
+#### nicepage_8
+
+Original [Link](https://nicepage.com/website-builder-software/preview/international-brand-and-design-agency-427433?device=desktop)
+
+My_Design [Link](https://varunuk09.github.io/HTML_PROJECTS/nicepage_8/)
+
+
+====================================
+
+====================================
+
 #### nicepage_9
 
 Original [Link](https://nicepage.com/website-builder-software/preview/business-environment-1976004?device=desktop)
 
 My_Design [Link](https://varunuk09.github.io/HTML_PROJECTS/nicepage_9/)
+
+====================================
+
+====================================
+
+#### nicepage_10
+
+Original [Link](https://nicepage.com/website-builder-software/preview/successful-business-plan-1170279?device=desktop)
+
+My_Design [Link](https://varunuk09.github.io/HTML_PROJECTS/nicepage_10/)
+
+====================================
+
+====================================
+
+#### figma_project_1
+
+Link Not Aviable
+
+My_Design [Link](https://varunuk09.github.io/HTML_PROJECTS/figma_project_1/)
 
 ====================================
