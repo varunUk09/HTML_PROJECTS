@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+*,*::before,*::after{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+:root{
+	--bg1Color:#f0f2f5;
+	--txtColor:#5f5f5f;
+	--bg2Color:#fff;
+	--logoColor:#045be6;
+}
+
+html{
+	font-size: 62.5%;
+	/* 1rem = 10px */
+}
+
+body{
+	background-color: var(--bg1Color);
+	color:var(--txtColor);
+}
+
+a{
+	text-decoration: none;
+	color:var(--txtColor);
+	cursor: pointer;
+}
+
+
+/* nav bar starts */
+header{
+	background-color:var(--bg2Color);
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,0,0.1);
+}
+header .container{
+	padding:.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 125rem;
+	margin:0 auto;
+	gap:1rem;
+}
+
+header .container .left-div{
+	display: flex;
+	gap:1.6rem;
+	align-items: center;
+}
+
+header .container .left-div .logo{
+	width: 2.8rem;
+	height: 2.8rem;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+header .container .left-div .search-box{
+	display: flex;
+    background-color: var(--bg1Color);
+    align-items: center;
+    padding: 0.2rem 1rem;
+    gap: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+header .container .left-div .search-box img{
+	width: 1.6rem;
+    height: 1.6rem;
+	object-fit: contain;
+}
+
+header .container .left-div .search-box input[type="text"]{
+	padding: 0.4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+header .container .center-div{
+	flex:1;
+	display: flex;
+	justify-content: center;
+}
+
+
+header .container .center-div ul{
+	display: flex;
+    gap: 2.6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+header .container .center-div ul li{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+header .container .center-div ul li::after{
+	content: "";
+	width:0;
+	height: .2rem;
+	background-color: var(--logoColor);
+	position: absolute;
+	bottom:-1rem;
+	transition:width 0.5s;	
+}
+
+header .container .center-div ul li:hover::after,
+header .container .center-div ul li.active-nav-tab::after{
+	width:100%;
+}
+
+
+header .container .center-div ul li img{
+	width:3.2rem;
+	height: 3.2rem;
+	object-fit: cover;
+	margin-left: -.7rem;
+}
+
+header .container .right-div{
+	display: flex;
+	justify-content: flex-end;
+}
+
+header .container .right-div img{
+	width:3rem;
+	height: 3rem;
+	object-fit: cover;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+
+
+header .container .right-div::before{
+    position: absolute;
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #41db51;
+    z-index: 999;
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
+
+}
+
+/* nav bar ends */
