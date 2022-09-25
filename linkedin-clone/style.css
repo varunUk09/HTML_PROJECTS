@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
 
 *,*::before,*::after{
 	padding: 0;
@@ -9,8 +9,9 @@
 
 :root{
 	--bg1Color:#f0f2f5;
-	--txtColor:#5f5f5f;
 	--bg2Color:#fff;
+	--txtColor:#5f5f5f;
+	--txtColor2:#ccc;
 	--logoColor:#045be6;
 }
 
@@ -30,6 +31,13 @@ a{
 	cursor: pointer;
 }
 
+/* container */
+.container{
+	max-width: 120rem;
+	margin:0 auto;
+	padding:.6rem 4.6%;
+}
+
 
 /* nav bar starts */
 header{
@@ -37,13 +45,11 @@ header{
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,0,0.1);
 }
 header .container{
-	padding:.6rem;
+	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 125rem;
-	margin:0 auto;
-	gap:1rem;
+		gap:1rem;
 }
 
 header .container .left-div{
@@ -63,10 +69,10 @@ header .container .left-div .search-box{
 	display: flex;
     background-color: var(--bg1Color);
     align-items: center;
-    padding: 0.2rem 1rem;
+    padding: 0.8rem 1rem;
     gap: 1rem;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 header .container .left-div .search-box img{
@@ -76,7 +82,7 @@ header .container .left-div .search-box img{
 }
 
 header .container .left-div .search-box input[type="text"]{
-	padding: 0.4rem;
+
     background-color: transparent;
     border: none;
     outline: none;
@@ -139,18 +145,176 @@ header .container .right-div img{
 	cursor: pointer;
 }
 
-
+/* online status */
 header .container .right-div::before{
-    position: absolute;
+	position: absolute;
     content: '';
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: #41db51;
     z-index: 999;
-    margin-top: 0.1rem;
-    margin-right: 0.1rem;
-
+    margin-top: -0.2rem;
+    border: 0.2rem solid var(--bg2Color);
 }
 
 /* nav bar ends */
+
+
+/* hero section starts */
+section.hero .container{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    /*don't change padding for left and right it's already set for the container globally*/
+}
+
+/*left side bar*/
+section.hero .container .left-sidebar{
+	flex-basis: 25%;
+}
+
+section.hero .container .left-sidebar img.cover-image{
+	width: 100%;
+	display: block;
+}
+
+section.hero .container .left-sidebar .profile-info-box{
+	background-color: var(--bg2Color);
+    padding: 0 1.2rem;
+}
+
+section.hero .container .left-sidebar .profile-info-box img.profile-pic{
+    --width: 8.2rem;
+    width: var(--width);
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0.36rem;
+    background-color: var(--bg2Color);
+    margin-top: calc(-1*var(--width)/2);
+}
+
+section.hero .container .left-sidebar .profile-info-box h1.name{
+	font-size: 2rem;
+}
+
+section.hero .container .left-sidebar .profile-info-box p.designation{
+	font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.6rem 0;
+}
+
+section.hero .container .left-sidebar .profile-info-box ul.stats{
+	list-style: none;
+    margin: 1.6rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+section.hero .container .left-sidebar .profile-info-box ul.stats li{
+	display: flex;
+    justify-content: space-between;
+}
+
+section.hero .container .left-sidebar .profile-info-box ul.stats li span{
+	color: var(--logoColor);
+    font-weight: 600;
+}
+
+section.hero .container .left-sidebar .profile-info-box .profile-links{
+	border-top: 0.1rem solid var(--txtColor2);
+    display: flex;
+}
+section.hero .container .left-sidebar .profile-info-box .profile-links a{
+	flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+}
+
+section.hero .container .left-sidebar .profile-info-box .profile-links a:nth-child(2){
+    border-left: 0.1rem solid var(--txtColor2);	
+}
+
+section.hero .container .left-sidebar .profile-info-box .profile-links a img{
+	width: 2.6rem;
+}
+
+/*activity*/
+section.hero .container .left-sidebar .activity{
+	background: var(--bg2Color);
+    margin-top: 1.2rem;
+    padding:0 1.2rem;
+}
+
+section.hero .container .left-sidebar .activity .activity-box{
+	padding-top: 1.6rem;
+}
+
+section.hero .container .left-sidebar .activity .activity-box h3{
+    margin-bottom:1rem;
+}
+
+section.hero .container .left-sidebar .activity .activity-box a{
+	display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+section.hero .container .left-sidebar .activity .activity-box a img{
+	width: 2rem;
+}
+
+section.hero .container .left-sidebar .activity .discover-more{
+	margin: 1.2rem -1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1rem solid var(--txtColor2);
+}
+
+section.hero .container .left-sidebar .activity .discover-more a{
+	color: var(--logoColor);
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;	
+}
+
+
+
+
+
+
+
+
+
+/*main content*/
+section.hero .container .main-content{
+	flex-basis: 47%;
+    border: 1px solid blue;
+}
+
+
+/*right sidebar*/
+section.hero .container .right-sidebar{
+	flex-basis: 25%;
+    border: 1px solid green;
+}
+
+
+
+/*+++++++++++++++MEDIA QUERIES++++++++++++++*/
+
+
