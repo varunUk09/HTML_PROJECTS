@@ -221,9 +221,9 @@ button.menu-btn > svg {
 }
 
 .recepies > div > .recepi > div > .recepi-detail {
-    font-size: 1.6rem;
-    line-height: 1.7;
+    --line-height: 1.7;
     margin-right: 5rem;
+    --color: initial;
 }
 
 .section-2 > .container > a {
