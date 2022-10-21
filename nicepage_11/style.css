@@ -43,6 +43,41 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+.btn {
+    --color: var(--white);
+    --background: var(--limegreen);
+    color: var(--color);
+    background: var(--background);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1.5rem 0;
+    border-radius: 4rem;
+    max-width: 29.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    --font-size: 7rem;
+    --color: var(--white);
+    font-size: var(--font-size);
+    color: var(--color);
+    font-weight: 700;
+}
+
+p {
+    --font-size: 1.6rem;
+    --font-weight: 400;
+    --line-height: 1.5;
+    --color: var(--white);
+    color: var(--color);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+}
+
 /*section1*/
 .section-1 {
     background: url(./images/section-1.jpeg);
@@ -113,18 +148,10 @@ button.menu-btn > svg {
     max-width: 76.8rem;
 }
 
-.section-1 .container .content h1 {
-    font-size: 7rem;
-    color: var(--white);
-    font-weight: 700;
-}
-
 .section-1 .container .content p {
-    color: var(--white);
-    font-size: 2rem;
-    font-weight: 600;
+    --font-size: 2rem;
+    --font-weight: 600;
     margin: 2rem 3rem 8rem;
-    line-height: 1.5;
 }
 
 .section-1 .container .content .cta-grp {
@@ -139,23 +166,6 @@ button.menu-btn > svg {
 
 .section-1 .container .content .cta-grp a {
     flex: 1;
-    --color: initial;
-    --background: initial;
-    color: var(--color);
-    background: var(--background);
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 1.5rem 0;
-    border-radius: 4rem;
-    max-width: 29.2rem;
-    width: 100%;
-}
-
-.section-1 .container .content .cta-grp a:nth-child(1) {
-    --color: var(--white);
-    --background: var(--limegreen);
 }
 
 .section-1 .container .content .cta-grp a:nth-child(2) {
@@ -223,6 +233,45 @@ button.menu-btn > svg {
     display: block;
 }
 
+/* section 3 */
+.section-3 {
+    background: var(--sandybrown);
+    display: flex;
+}
+
+.section-3 > div {
+    flex-basis: 50%;
+}
+
+.section-3 > .right-div > img {
+    height: 64rem;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-3 .left-div > p {
+    --font-size: 1.7rem;
+    --line-height: 1.8;
+    padding: 2rem 0;
+}
+
+.section-3 > .left-div > p a {
+    color: var(--white);
+    border-bottom: .1rem solid
+}
+
+.section-3 > .left-div > p a:hover {
+    border-bottom: none;
+    color: #e6e6e6;
+}
+
+.section-3 .left-div {
+    padding-left: 10vw;
+    padding-top: 15rem;
+    padding-right: 2rem;
+}
+
 /*media queries*/
 @media(max-width:1199px) {
     .container {
@@ -248,6 +297,18 @@ button.menu-btn > svg {
         flex-direction: column;
     }
 
+    .section-3 .left-div {
+        padding-top: 10rem;
+    }
+
+    .section-3 .left-div > h1 {
+        --font-size: 4.8rem;
+    }
+
+    .section-3  .right-div img {
+        height: 54rem;
+    }
+
 }
 
 @media(max-width:767px) {
@@ -264,11 +325,28 @@ button.menu-btn > svg {
         flex-direction: column;
     }
 
+    .section-3 {
+        flex-direction: column;
+    }
+
+    .section-3 .left-div {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .section-3 .right-div img {
+        height: 50rem;
+    }
+
 }
 
 @media(max-width:575px) {
     .container {
         width: 39rem;
+    }
+
+    h1 {
+        --font-size: 4rem !important;
     }
 
     .section-1 {
@@ -285,10 +363,6 @@ button.menu-btn > svg {
         width: 100%;
     }
 
-    .section-1 .container .content h1 {
-        font-size: 4.8rem;
-    }
-
     .section-1 .container .content p {
         margin: 2rem 0 8rem;
         font-size: 1.8rem;
@@ -296,6 +370,14 @@ button.menu-btn > svg {
 
     .recepies > div > .recepi > div > .recepi-detail {
         margin-right: 0;
+    }
+
+    .section-3 .right-div img {
+        height: 30rem;
+    }
+
+    .section-3 .left-div {
+        padding: 2rem;
     }
 
 }
